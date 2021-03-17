@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .banner{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .design{
+width: 400px;
+height: 400px;
+position: relative;
+        }
+        .design>*, .grid>* {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+        }
+        #rotate{
+            border: 20px solid red;
+            transform: rotate(30deg);
+            box-shadow: 0px 0px 10px rgb(255, 72, 72),inset 0 0 10px red;
+        }
+        .grid-template{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .grid{
+            mix-blend-mode: darken;
+        }
+        img{
+            object-fit: cover;
+        }
+.white-color{
+    background-color: white;
+}
+.design>img{
+            box-shadow: 0px 0px 8px rgb(17, 14, 14), inset 0 0 10px rgb(29, 23, 23);
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="design">
+            <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg" alt="">
+            <div id="rotate">
+             </div>
+            <div class="grid-template">
+                <!-- <div class="white-color1"></div> -->
+                
+                <div class="white-color"></div>
+                <div></div>
+                <div class="white-color"></div>
+                <div></div>
+            </div>
+            <div class="grid">
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg" alt="">
+                <div class="grid-template">
+                    
+                    <!-- <div></div> -->
+                    <div></div>
+                    <div class="white-color"></div>
+                    <div></div>
+                    <div class="white-color"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
